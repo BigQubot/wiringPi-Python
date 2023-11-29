@@ -294,7 +294,7 @@ def main():
 	while True:
 		try:
 			#get time
-			yi[0] = full_string("++++OrangePi++++")
+			yi[0] = full_string("++++BananaPi++++")
 			#yi[1] = full_string(time.strftime("%m/%d %w"))
 			yi[1] = full_string(time.strftime("%m/%d %a"))
 			yi[2] = full_string(time.strftime("%H:%M"))

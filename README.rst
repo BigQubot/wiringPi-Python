@@ -1,18 +1,17 @@
 Note
 ~~~~
 
-wiringOP for Python
+wiringPi for Python
 ===================
 
-wiringOP: An implementation of most of the Arduino Wiring functions for
-the Orange Pi.
+wiringPi: An implementation of most of the Arduino Wiring functions for
+the Banana Pi.
 
 Supported boards
 ===================
 tested on:
-``Orange Pi Zero2``
-``Orange Pi 3 LTS``
-``Orange Pi 4 LTS``
+``Banana Pi M4 Berry``
+``Banana Pi M4 Zero``
 
 Manual Build
 ============
@@ -22,8 +21,8 @@ Get/setup repo
 
 .. code:: bash
 
-    git clone --recursive https://github.com/orangepi-xunlong/wiringOP-Python.git
-    cd wiringOP-Python
+    git clone --recursive https://github.com/BigQubot/wiringPi-Python.git
+    cd wiringPi-Python
 
 Don't forget the --recursive; it is required to also pull in the WiringPi C code from its own repository.
 
@@ -31,7 +30,7 @@ Prerequisites
 -------------
 
 To rebuild the bindings you **must** first have installed ``swig``,
-``python3-dev``, and ``python3-setuptools``. wiringOP should also be installed system-wide for access
+``python3-dev``, and ``python3-setuptools``. wiringPi should also be installed system-wide for access
 to the ``gpio`` tool.
 
 .. code:: bash
