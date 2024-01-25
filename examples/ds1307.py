@@ -6,7 +6,7 @@ import operator
 import argparse
 
 parser = argparse.ArgumentParser(description='i2c')
-parser.add_argument("--device", type=str, default="/dev/i2c-0", help='specify the i2c node')
+parser.add_argument("--device", type=str, default="/dev/i2c-2", help='specify the i2c node')
 args = parser.parse_args()
 
 i2caddr = 0x68

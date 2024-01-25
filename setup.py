@@ -9,13 +9,13 @@ from glob import glob
 from subprocess import Popen, PIPE
 import re
 
-sources = glob('wiringOP/devLib/*.c')
-sources += ['wiringOP/examples/blink.c']
-sources += glob('wiringOP/wiringPi/*.c')
+sources = glob('wiringPi/devLib/*.c')
+sources += ['wiringPi/examples/blink.c']
+sources += glob('wiringPi/wiringPi/*.c')
 sources += ['wiringpi.i']
 sources += ['fixUndefFunc.c']
 try:
-    sources.remove('wiringOP/devLib/piFaceOld.c')
+    sources.remove('wiringPi/devLib/piFaceOld.c')
 except ValueError:
     # the file is already excluded in the source distribution
     pass
@@ -44,7 +44,7 @@ class sdist_ext_first(sdist):
 
 _wiringpi = Extension(
     '_wiringpi',
-    include_dirs=['wiringOP', 'wiringOP/wiringPi', 'wiringOP/devLib'],
+    include_dirs=['wiringPi', 'wiringPi/wiringPi', 'wiringPi/devLib'],
     swig_opts=['-threads'],
     extra_link_args=['-lcrypt', '-lrt'],
     sources=sources

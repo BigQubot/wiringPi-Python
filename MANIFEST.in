@@ -1,5 +1,5 @@
-graft wiringOP/wiringPi
-graft wiringOP/devLib
+graft wiringPi/wiringPi
+graft wiringPi/devLib
 include README.rst
 include LICENSE.txt
 include setup.cfg
